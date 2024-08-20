@@ -39,7 +39,12 @@ Or just reboot and pick UEFI Firmware Settings on the GRUB menu... boring.
 Mount the partitions
 ```
 # The big partition
+
+## If it is btrfs
 mount /dev/sdaX /mnt -o subvol=@
+
+## If it is ext4
+mount /dev/sdaX /mnt
 
 # The 1G boot partition
 mount /dev/sdaY /mnt/boot
