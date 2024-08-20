@@ -3,6 +3,14 @@ My hyprland config that I got tired of reconfiguring over and over again
 
 ## Notes to self
 
+### Fix insanely slow boot time
+My laptop will keep waiting and waiting in the booting process because of /dev/tpmrm0 device (Kernel Time Sync)
+
+Put it to sleep
+```sh
+systemctl mask dev-tpmrm0.device
+```
+
 ### Packages (that might be missing)
 Install the packages below
 ```sh
