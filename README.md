@@ -11,10 +11,13 @@ Put it to sleep
 systemctl mask dev-tpmrm0.device
 ```
 
+### Add chaotic-aur repo to your pacman
+Search it up on google
+
 ### Packages (that might be missing)
 Install the packages below
 ```sh
-sudo pacman -S --needed brightnessctl hyprlock wl-clipboard unzip p7zip less htop fastfetch
+sudo pacman -S --needed waybar brightnessctl hyprlock wl-clipboard unzip p7zip less htop fastfetch vesktop
 ```
 
 ### Linking
