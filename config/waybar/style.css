@@ -52,9 +52,10 @@ button:hover {
 }
 
 #workspaces button {
-    padding: 0 5px;
+    padding: 5px 5px;
+    margin: 3px 0;
     background-color: rgb(40,30,60);
-    border-radius: 5px;
+    border-radius: 7px;
     margin-right: 4px;
     color: #ffffff;
 }
@@ -92,19 +93,15 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #power-profiles-daemon,
-#mpd {
-    padding: 0 10px;
+#mpd,
+#window {
+    padding: 5px 10px;
     color: #ffffff;
     background-color: rgb(40,30,60);
-    border-radius: 5px;
+    border-radius: 7px;
+    margin: 3px 4px;
 }
 
-#window {
-    margin: 0 4px;
-    background-color: rgb(40,30,60);
-    border-radius: 5px;
-    padding: 0 10px;
-}
 
 #workspaces {
     margin: 0 4px;
@@ -112,7 +109,7 @@ button:hover {
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
+    margin-left: 6px;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
@@ -120,8 +117,6 @@ button:hover {
     margin-right: 0;
 }
 
-#clock {
-}
 
 #battery {
     background-color: #ffffff;
@@ -174,17 +169,8 @@ label:focus {
     background-color: #000000;
 }
 
-#cpu {
-}
-
-#memory {
-}
-
 #disk {
     background-color: #964B00;
-}
-
-#backlight {
 }
 
 #network {
@@ -193,12 +179,6 @@ label:focus {
 
 #network.disconnected {
     background-color: #f53c3c;
-}
-
-#pulseaudio {
-}
-
-#pulseaudio.muted {
 }
 
 #wireplumber {
@@ -224,15 +204,6 @@ label:focus {
     background-color: #ffa000;
 }
 
-#temperature {
-}
-
-#temperature.critical {
-}
-
-#tray {
-}
-
 #tray > .passive {
     -gtk-icon-effect: dim;
 }
@@ -242,22 +213,8 @@ label:focus {
     background-color: #eb4d4b;
 }
 
-#idle_inhibitor {
-}
-
-#idle_inhibitor.activated {
-}
-
-#mpd {
-}
-
-#mpd.disconnected {
-}
-
-#mpd.stopped {
-}
-
-#mpd.paused {
+#backlight {
+    margin-right: 6px;
 }
 
 #language {
