@@ -1,0 +1,14 @@
+* {
+    border-radius: 8px;
+    border: none;
+}
+
+window {
+    font-family: "FiraCode Nerd Font", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#entry, #input {
+    padding: 0.25em;
+}
