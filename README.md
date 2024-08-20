@@ -4,23 +4,28 @@ My hyprland config that I got tired of reconfiguring over and over again
 ## Notes to self
 
 ### Fix insanely slow boot time
-My laptop will keep waiting and waiting in the booting process because of /dev/tpmrm0 device (Kernel Time Sync)
+My laptop experiences a prolonged boot process due to the /dev/tpmrm0 device (Kernel Time Sync)
+Check this by removing "quiet" option of grub in ```/etc/default/grub```, then updating grub and reboot.
+```
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet"
+```
 
-Put it to sleep
+If its by that device, put it to sleep
 ```sh
 systemctl mask dev-tpmrm0.device
 ```
 
-### Add chaotic-aur repo to your pacman
-Search it up on google
+### Possibly Missing Packages (after archinstall'ing Hyprland)
 
-### Packages (that might be missing)
-Install the packages below
+#### Add chaotic-aur to pacman
+Before installing, add chaotic-aur repo to your pacman.conf by following instructions  [here](https://aur.chaotic.cx/docs)
+<br><br>
+Then install the packages below
 ```sh
 sudo pacman -S --needed waybar brightnessctl hyprlock wl-clipboard unzip p7zip less htop fastfetch vesktop
 ```
 
-### Linking
+### Symlinking configs
 A config of an each program needs to be symlinked to this dotfiles directory as its shown below
 ```sh
 # Make a directory for the desired program
